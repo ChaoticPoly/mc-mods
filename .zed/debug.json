@@ -1,0 +1,10 @@
+[
+  {
+    "label": "Attach to Minecraft Client",
+    "adapter": "Debugger for Java",
+    "request": "attach",
+    "hostName": "localhost",
+    "port": 5005,
+    "cwd": "/home/mango/sourcecode/fabric-example-mod"
+  }
+]

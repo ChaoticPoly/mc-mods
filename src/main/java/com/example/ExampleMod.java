@@ -1,6 +1,10 @@
 package com.example;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
+
+import com.example.items.TickManager;
+import com.example.items.modItems;
 
 import net.minecraft.resources.Identifier;
 
@@ -20,6 +24,8 @@ public class ExampleMod implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+		modItems.initialize();
+		ServerTickEvents.END_SERVER_TICK.register(server -> TickManager.tick());
 
 		LOGGER.info("Hello Fabric world!");
 	}
