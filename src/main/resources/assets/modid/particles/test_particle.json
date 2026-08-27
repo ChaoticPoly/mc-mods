@@ -1,3 +1,3 @@
 {
-  "texture": ["example-mod:test_particle"]
+  "textures": ["minecraft:goldheart_2", "minecraft:goldheart_1", "minecraft:goldheart_0"]
 }

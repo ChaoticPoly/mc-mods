@@ -7,6 +7,9 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.Level;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.phys.Vec3;
+
+import com.example.ExampleMod;
+
 import net.minecraft.core.particles.DustParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
 
@@ -77,7 +80,7 @@ public class TestUse extends Item{
                                 double offsetX = radius * Math.cos(angle);
                                 double offsetZ = radius * Math.sin(angle);
                                 Vec3 particlePos = loc.add(offsetX, totem[0] / 6, offsetZ);
-                                serverLevel.sendParticles(ParticleTypes.COMPOSTER, particlePos.x, particlePos.y, particlePos.z, 0, 0, 0, 1, 0);
+                                serverLevel.sendParticles(ExampleMod.TEST_PARTICLE, particlePos.x, particlePos.y, particlePos.z, 0, 0, 0, 1, 0);
                             }
 
                             totem[0]++;
