@@ -10,7 +10,7 @@ import net.minecraft.world.phys.Vec3;
 
 import com.example.ExampleMod;
 
-import net.minecraft.core.particles.DustParticleOptions;
+//import net.minecraft.core.particles.DustParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
 
 public class TestUse extends Item{
@@ -24,7 +24,8 @@ public class TestUse extends Item{
             return InteractionResult.PASS;
         }
         if (level instanceof ServerLevel serverLevel) {
-            DustParticleOptions dustColor = new DustParticleOptions(0x55FF55, 1.0f);
+
+            //DustParticleOptions dustColor = new DustParticleOptions(0x55FF55, 1.0f);
             double radius = 1;
             Vec3 loc = player.position();
             final double [] repeattimer = {0};

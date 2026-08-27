@@ -15,7 +15,7 @@ public class modItems {
 
         return item;
     }
-    public static final Item PLACEHOLDER = register(ModItemIds.PLACEHOLDER, TestUse::new, new Item.Properties());
+    public static final Item PLACEHOLDER = register(ModItemIds.PLACEHOLDER, Circle::new, new Item.Properties());
 
     public static void initialize(){
 
