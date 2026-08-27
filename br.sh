@@ -1,3 +1,3 @@
 #!/bin/bash
 ./gradlew build
-./gradlew runClient --debug-jvm
+./gradlew runClient
